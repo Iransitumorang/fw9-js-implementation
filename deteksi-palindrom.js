@@ -1,9 +1,8 @@
 function palindrome(input) {
-    const kata = input.toLowerCase().split('');
-    const kataBaru = kata.join('');
-    const balikKata = [...kataBaru].reverse().join('');
+        const kata = input.toLowerCase();
+    const balikKata = [...kata].reverse().join('');
 
-    if (kataBaru === balikKata) {
+    if (kata === balikKata) {
         return ('Palindrome');
     } else {
         return ('Bukan Palindrome');
